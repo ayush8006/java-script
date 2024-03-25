@@ -89,9 +89,62 @@
 // }
 
 
-//maps are not iterable by for in loop
+//maps are not iterable by for in loop for in loop will print nothing
 
 
+
+
+//for each loop->higher order function
+
+function printme(item){
+    console.log(item);
+}
+
+const coding=["js","ruby","java","python"]
+
+// coding.forEach( function (item) {//call back function as it is high order so no name
+
+//     console.log(item);
+// })
+//arrow fxn can be used as callback
+
+// coding.forEach((item)=>{
+//     console.log(item);
+// })
+
+//a normal function can be passed as refernce only
+//coding.forEach(printme)
+
+
+//not only item we got we also got an index,arr list
+
+//  coding.forEach((item,index,arr)=>{
+//      console.log(item,index,arr);
+//  })
+
+
+
+
+//[{},{},{},..]
+
+const myCoding=[
+    {
+        languageName:"javascript",
+        languagefilename:"js"
+    },
+    {
+        languageName:"python",
+        languagefilename:"py"
+    },
+    {
+        languageName:"c++",
+        languagefilename:"cpp"
+    },
+];
+
+myCoding.forEach((item)=>{
+    console.log(item.languageName);
+})
 
 
 
